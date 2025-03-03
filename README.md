@@ -1,18 +1,19 @@
 # Frontend Mentor - Advice Generator App Solution
 
-This is a solution to the [Advice Generator App challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [Advice Generator App challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db). Frontend Mentor challenges help improve coding skills by building real-world projects.
 
 ## Table of Contents
 
 - [Overview](#overview)
   - [The Challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My Process](#my-process)
-  - [Built With](#built-with)
-  - [What I Learned](#what-i-learned)
-  - [Continued Development](#continued-development)
-  - [Useful Resources](#useful-resources)
+  - [Screenshots](#screenshots)
+  - [Live Demo](#live-demo)
+- [Built With](#built-with)
+- [Features](#features)
+- [Installation & Setup](#installation--setup)
+- [What I Learned](#what-i-learned)
+- [Future Improvements](#future-improvements)
+- [Resources](#resources)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
@@ -22,40 +23,70 @@ This is a solution to the [Advice Generator App challenge on Frontend Mentor](ht
 
 Users should be able to:
 
-- View the optimal layout for the app depending on their device's screen size
-- See hover states for all interactive elements on the page
+- View an optimal layout for the app depending on their device's screen size
+- See hover states for interactive elements
 - Generate a new piece of advice by clicking the dice icon
 
-### Screenshot
+### Screenshots
 
-**Desktop Device**
+#### **Desktop View**
 
-![Advice Generator Screenshot](design/desktop-design.png)
+![Desktop Screenshot](design/desktop-design.png)
 
-**Mobile Design**
+#### **Mobile View**
 
 <img src="design/mobile-design.png" height="750">
 
-### Links
+### Live Demo
 
-- Solution URL: [Solution](https://www.frontendmentor.io/solutions/advice-generator-app-SU1t6L0Bqn)
-- Live Site URL: [Live Demo](https://yashi-singh-9.github.io/Advice-Generator-App/)
+- [Solution on Frontend Mentor](https://www.frontendmentor.io/solutions/advice-generator-app-SU1t6L0Bqn)
+- [Live Demo](https://yashi-singh-9.github.io/Advice-Generator-App/)
 
-## My Process
+## Built With
 
-### Built With
+- **Semantic HTML5**
+- **CSS with Less (CSS Preprocessor)**
+- **JavaScript (Fetch API for async data fetching)**
+- **Bootstrap 5**
+- **Mobile-First Approach**
 
-- Semantic HTML5 markup
-- Less (CSS preprocessor)
-- JavaScript (fetch API for async data fetching)
-- Bootstrap 5
-- Mobile-first workflow
+## Features
 
-### What I Learned
+- Fetches random advice from an API
+- Responsive design for desktop and mobile
+- Smooth UI interactions with hover effects
 
-During this project, I reinforced my understanding of asynchronous JavaScript using the `fetch()` API to retrieve data from an external source. Implementing dynamic content updates with JavaScript and styling elements responsively using Bootstrap and Less was a valuable experience.
+## Installation & Setup
 
-Example of fetching and displaying advice:
+To run this project locally:
+
+1. **Clone the Repository:**
+   ```sh
+   git clone https://github.com/Yashi-Singh-9/Advice-Generator-App.git
+   cd Advice-Generator-App
+   ```
+
+2. **Install Less (if not installed):**
+   ```sh
+   npm install -g less
+   ```
+
+3. **Compile Less to CSS:**
+   ```sh
+   lessc styles.less styles.css
+   ```
+
+4. **Open `index.html` in a browser.**
+
+## What I Learned
+
+This project helped reinforce my understanding of:
+
+- Asynchronous JavaScript using the `fetch()` API
+- Dynamic content updates with JavaScript
+- Responsive design using Bootstrap and Less
+
+### Example Code (Fetching Advice)
 
 ```js
 async function fetchAdvice() {
@@ -72,18 +103,16 @@ async function fetchAdvice() {
 window.onload = fetchAdvice;
 ```
 
-### Continued Development
+## Future Improvements
 
-Moving forward, I would like to:
-
-- Improve UI animations for a smoother user experience
+- Enhance UI animations for smoother interactions
 - Implement caching to reduce API calls
-- Explore different ways to handle errors and user feedback
+- Improve error handling and user feedback mechanisms
 
-### Useful Resources
+## Resources
 
-- [Bootstrap 5 Documentation](https://getbootstrap.com/docs/5.3/) - Helped with responsive design and UI components.
-- [Advice Slip API](https://api.adviceslip.com/) - The external API used to fetch advice.
+- [Bootstrap 5 Documentation](https://getbootstrap.com/docs/5.3/) - For responsive design and UI components.
+- [Advice Slip API](https://api.adviceslip.com/) - Used to fetch random advice.
 
 ## Author
 
@@ -92,4 +121,4 @@ Moving forward, I would like to:
 
 ## Acknowledgments
 
-A big thank you to the Frontend Mentor community for providing great challenges that help improve coding skills. Looking forward to building more projects!
+Thanks to the Frontend Mentor community for great challenges that improve coding skills. Looking forward to building more projects!
