@@ -1,0 +1,79 @@
+@light-cyan: hsl(193, 38%, 86%);
+@neon-green: hsl(150, 100%, 66%);
+@grayish-blue: hsl(217, 19%, 38%);
+@dark-grayish-blue: hsl(217, 19%, 24%);
+@dark-blue: hsl(218, 23%, 16%);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Manrope', sans-serif !important;
+    font-weight: 800 !important;
+    font-size: 1.75rem !important;
+    background-color: @dark-blue !important;
+}
+
+main{
+    margin: 8rem auto 4rem auto;
+
+    .advice-container{
+        background-color: @dark-grayish-blue;
+        max-width: 650px;
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+
+        @media (max-width: 660px) {
+            width: 90%;
+        }
+
+        .advice-id{
+            font-size: 1.3rem;
+            color: @neon-green;
+            text-transform: uppercase;
+        }
+
+        .advice-text{
+            color: @light-cyan;
+        }
+
+        picture{
+            img{
+                max-width: 100%;
+                height: auto;
+                display: block;
+                margin: 0 auto;
+            }
+        }
+
+        .dice-button{
+            background-color: @neon-green;
+            width: 70px;
+            height: 70px;
+            position: absolute;
+            left: 50%;
+            bottom: -35px; 
+            transform: translateX(-50%);
+            transition: all 0.3s ease-in-out;
+
+            &:hover{
+                background-color: lighten(@neon-green, 20%);
+                box-shadow: 0 0 30px @neon-green;
+            }
+        }
+    }
+}
+
+footer{
+    font-size: 1rem;
+    color: @light-cyan;
+
+    a,
+    a:visited{
+        color: @grayish-blue;
+    }
+}

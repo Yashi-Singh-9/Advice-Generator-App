@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Manrope', sans-serif !important;
+  font-weight: 800 !important;
+  font-size: 1.75rem !important;
+  background-color: hsl(218, 23%, 16%) !important;
+}
+main {
+  margin: 8rem auto 4rem auto;
+}
+main .advice-container {
+  background-color: hsl(217, 19%, 24%);
+  max-width: 650px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+@media (max-width: 660px) {
+  main .advice-container {
+    width: 90%;
+  }
+}
+main .advice-container .advice-id {
+  font-size: 1.3rem;
+  color: hsl(150, 100%, 66%);
+  text-transform: uppercase;
+}
+main .advice-container .advice-text {
+  color: hsl(193, 38%, 86%);
+}
+main .advice-container picture img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+main .advice-container .dice-button {
+  background-color: hsl(150, 100%, 66%);
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  left: 50%;
+  bottom: -35px;
+  transform: translateX(-50%);
+  transition: all 0.3s ease-in-out;
+}
+main .advice-container .dice-button:hover {
+  background-color: hsl(150, 100%, 86%);
+  box-shadow: 0 0 30px hsl(150, 100%, 66%);
+}
+footer {
+  font-size: 1rem;
+  color: hsl(193, 38%, 86%);
+}
+footer a,
+footer a:visited {
+  color: hsl(217, 19%, 38%);
+}
